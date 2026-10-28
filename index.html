@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVARYX Studio — Digital Experiences, Built to Move</title>
+  <meta name="description" content="NOVARYX is an independent digital studio crafting distinctive, mobile-first websites for ambitious small businesses.">
+  <meta name="theme-color" content="#0b0d0c">
+  <meta property="og:title" content="NOVARYX Studio — Digital Experiences, Built to Move">
+  <meta property="og:description" content="Distinctive websites and digital experiences for ambitious small businesses.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(sessionStorage.getItem("seen"))document.documentElement.classList.add("seen")}catch(e){}</script>
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js","three/addons/":"./vendor/three/addons/","animejs":"./vendor/animejs/lib/anime.esm.min.js"}}</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="intro" id="intro"><span class="intro-symbol" aria-hidden="true">N<span></span></span><span class="intro-logo">NOVARYX<span>™</span></span><p class="intro-caption">DIGITAL EXPERIENCES, BUILT TO MOVE</p><button class="intro-skip" type="button" id="intro-skip">Skip intro ↗</button></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="logo" href="#top" aria-label="NOVARYX Studio, back to top"><span class="logo-mark" aria-hidden="true">N</span><span class="logo-word">NOVARYX<span class="logo-suffix">™</span></span></a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#playground">Design lab</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#estimator">Project planner</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#contact">Start a project</a>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Independent digital studio <span class="eyebrow-divider">/</span> Taking select projects</p>
+          <h1>Make your next move <em>impossible to ignore.</em></h1>
+          <p class="lead">Distinctive websites for ambitious small businesses. Thoughtful design, sharp details and clear paths from first impression to enquiry — built around your goals and budget.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contact">Build something bold <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#work">Explore selected work <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-note"><span class="note-line"></span> Small studio energy. Detail-obsessed execution.</p>
+          <ul class="hero-points" aria-label="Highlights">
+            <li>Designed for mobile</li><li>Scope agreed upfront</li><li>Built for real enquiries</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true" id="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="float-label label-design"><span class="mini-spark">✳</span> Design-led</span>
+          <span class="float-label label-responsive"><span class="live-dot"></span> Built for every screen</span>
+          <div class="browser browser-back">
+            <div class="browser-bar"><i></i><i></i><i></i></div>
+            <div class="browser-body"><b></b><b class="w60"></b><b class="w40"></b></div>
+          </div>
+          <div class="browser browser-front">
+            <div class="browser-bar"><i></i><i></i><i></i><span>concept-cafe.example</span></div>
+            <div class="browser-body">
+              <div class="mock-hero"><b class="w70"></b><b class="w50"></b><u></u></div>
+              <div class="mock-cards"><s></s><s></s><s></s></div>
+            </div>
+          </div>
+          <span class="tag"><span class="tag-pulse"></span> Interactive concept</span>
+          <div class="hero-coordinate coord-top">NX—001 <span>DESIGN SYSTEM</span></div><div class="hero-coordinate coord-bottom">EST. IN POSSIBILITY <span>↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Our approach"><div class="signal-track"><span>STRATEGY</span><i>✳</i><span>DESIGN</span><i>✳</i><span>DEVELOPMENT</span><i>✳</i><span>INTERACTION</span><i>✳</i><span>STRATEGY</span><i>✳</i><span>DESIGN</span><i>✳</i><span>DEVELOPMENT</span><i>✳</i><span>INTERACTION</span><i>✳</i></div></section>
+
+    <section class="section" id="work"><div class="container"><p class="eyebrow">Selected work</p><h2>Concept projects</h2><p class="lead">A glimpse of what your brand could become. These are self-initiated concepts — not client work — created to demonstrate range, direction and craft.</p>
+<div class="work-toolbar" role="group" aria-label="Filter concept projects"><span class="toolbar-label">Explore by industry</span><div class="work-filters"><button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All concepts <span>03</span></button><button class="filter-chip" type="button" data-filter="cafe" aria-pressed="false">Hospitality</button><button class="filter-chip" type="button" data-filter="boutique" aria-pressed="false">Fashion</button><button class="filter-chip" type="button" data-filter="tech" aria-pressed="false">Technology</button></div></div>
+<div class="grid three" id="work-grid" aria-live="polite"></div></div></section>
+<section class="section playground-section" id="playground"><div class="container"><div class="playground-heading"><div><p class="eyebrow">Interactive design lab</p><h2>One studio.<br><em>Different worlds.</em></h2></div><p class="lead">A small taste of how the same thoughtful structure can become a completely different digital experience for your brand.</p></div><div class="playground-shell"><div class="playground-controls"><span class="control-kicker">01 / Choose a direction</span><div class="demo-switches" role="group" aria-label="Choose a concept style"><button type="button" class="demo-switch is-active" data-demo-theme="hospitality" aria-pressed="true"><span class="switch-dot dot-hospitality"></span>Hospitality</button><button type="button" class="demo-switch" data-demo-theme="fashion" aria-pressed="false"><span class="switch-dot dot-fashion"></span>Fashion</button><button type="button" class="demo-switch" data-demo-theme="technology" aria-pressed="false"><span class="switch-dot dot-technology"></span>Technology</button></div><div class="playground-note"><span class="live-dot"></span><span id="demo-caption">Warm editorial layouts, clear menus and inviting details.</span></div><div class="device-controls" role="group" aria-label="Preview size"><span class="control-kicker">02 / Viewport</span><button type="button" class="device-btn is-active" data-device="desktop" aria-pressed="true"><span aria-hidden="true">▱</span> Desktop</button><button type="button" class="device-btn" data-device="mobile" aria-pressed="false"><span aria-hidden="true">▯</span> Mobile</button></div><a class="text-link playground-cta" href="#contact">Build one for my business <span aria-hidden="true">↗</span></a></div><div class="playground-stage" data-demo="hospitality"><div class="demo-browser"><div class="demo-browser-bar"><div class="browser-dots"><i></i><i></i><i></i></div><span class="demo-url">yourbrand.studio</span><span class="demo-live"><i></i> LIVE PREVIEW</span></div><div class="demo-page"><nav class="demo-nav"><span class="demo-brand">MORNING / FORM</span><span class="demo-nav-links"><i>Story</i><i>Collection</i><i>Contact</i></span><span class="demo-menu-mark">↗</span></nav><div class="demo-content"><div class="demo-copy"><p class="demo-overline">DESIGNED FOR THE EVERYDAY</p><h3 id="demo-title">Good things<br><em>take time.</em></h3><p id="demo-description">Thoughtful food, considered spaces and a little room to slow down.</p><span class="demo-button" id="demo-button-label">Explore the menu <b>↗</b></span></div><div class="demo-art" aria-hidden="true"><div class="demo-art-orbit"></div><div class="demo-art-object"><span></span></div><div class="demo-art-stamp">N° 01<br>EST. 2026</div></div></div><div class="demo-bottom"><span id="demo-bottom-left">GOOD FOOD. GOOD COMPANY.</span><span id="demo-bottom-right">17° 23' N — OPEN TODAY ↗</span></div></div></div><div class="stage-caption"><span>CONCEPT PREVIEW / NOT A CLIENT PROJECT</span><span>INTERACTIVE DESIGN SYSTEM <b>↗</b></span></div><div class="stage-actions"><a class="btn btn-ghost" id="full-demo-link" href="demos/index.html?theme=hospitality" target="_blank" rel="noopener">Open full live demo <span aria-hidden="true">↗</span></a><span class="stage-actions-note">Standalone concept site · opens in a new tab</span></div></div></div></div></section>
+<section class="manifesto-section"><div class="container manifesto-grid"><p class="eyebrow">The NOVARYX approach</p><div><h2>Pretty gets attention.<br><em>Purpose earns action.</em></h2><p class="lead">Every page should do a job: explain your value, make your brand memorable, and help the right person take the next step.</p><a class="text-link" href="#process">See how we work <span aria-hidden="true">↗</span></a></div><div class="manifesto-index"><span>01 / 03</span><div class="index-line"><i></i></div><p>Clarity before clutter.</p><p>Details with intention.</p><p>Every click with a purpose.</p></div></div></section>
+<section class="section" id="services"><div class="container"><p class="eyebrow">Services</p><h2>What I build</h2><div class="grid three"><article class="card"><h3>Business websites</h3><p class="muted">Multi-page sites that explain what you do and make enquiries easy.</p></article><article class="card"><h3>Landing pages</h3><p class="muted">One focused page built around a single offer or campaign.</p></article><article class="card"><h3>Portfolio websites</h3><p class="muted">Show your work or craft with a clean, memorable layout.</p></article><article class="card"><h3>Restaurant &amp; cafe sites</h3><p class="muted">Menus, hours, location and a clear way to reach you.</p></article><article class="card"><h3>Responsive redesigns</h3><p class="muted">Modernise an existing site so it works well on every screen.</p></article><article class="card"><h3>Maintenance &amp; improvements</h3><p class="muted">Content updates, fixes and small upgrades after launch.</p></article></div></div></section>
+<section class="section" id="pricing"><div class="container"><p class="eyebrow">Transparent by design</p><h2>Start smart. Scale when ready.</h2><p class="lead">Simple starter prices in INR: ₹999, ₹1,399 or ₹1,899. Domain, hosting, advanced features and maintenance are separate.</p><div class="grid three"><article class="card price"><h3>Starter Website</h3><p class="amount">₹999</p><ul class="ticks"><li>One-page landing website</li><li>Mobile-friendly layout</li><li>WhatsApp contact button</li><li>One revision round</li></ul><p class="muted small">Best for a simple introduction page. Domain, hosting and paid services are separate.</p><a class="btn btn-ghost" href="#contact" data-pick="Starter Website — ₹999">Choose Starter</a></article><article class="card price featured"><h3>Standard Website</h3><p class="amount">₹1,399</p><ul class="ticks"><li>Up to 3 simple pages</li><li>Responsive design</li><li>WhatsApp and email contact links</li><li>One revision round</li></ul><p class="muted small">For a small business presence. Advanced forms, booking and payment features are separate.</p><a class="btn btn-primary" href="#contact" data-pick="Standard Website — ₹1,399">Choose Standard</a></article><article class="card price"><h3>Plus Website</h3><p class="amount">₹1,899</p><ul class="ticks"><li>Up to 5 simple pages</li><li>Customised visual style</li><li>Contact and service sections</li><li>One revision round</li></ul><p class="muted small">Static website package. Online payments, cart, backend and domain/hosting are not included.</p><a class="btn btn-ghost" href="#contact" data-pick="Plus Website — ₹1,899">Choose Plus</a></article></div></div></section>
+<section class="section" id="process"><div class="container"><p class="eyebrow">Process</p><h2>From idea to launch</h2><ol class="steps"><li class="step reveal"><span>01</span><h3>Discovery</h3><p class="muted">We agree goals, content and requirements.</p></li><li class="step reveal"><span>02</span><h3>Design</h3><p class="muted">A visual direction you approve before building.</p></li><li class="step reveal"><span>03</span><h3>Development</h3><p class="muted">Clean, responsive code built to the design.</p></li><li class="step reveal"><span>04</span><h3>Testing</h3><p class="muted">Device checks and rounds of revisions.</p></li><li class="step reveal"><span>05</span><h3>Launch</h3><p class="muted">Go live, handover and next steps.</p></li></ol></div></section>
+<section class="section" id="why"><div class="container"><p class="eyebrow">Why work with me</p><h2>Practical, clear, affordable</h2><div class="grid three"><article class="card"><h3>Mobile-friendly</h3><p class="muted">Designed for phones first, then scaled up.</p></article><article class="card"><h3>Clear calls to action</h3><p class="muted">Visitors always know how to contact you.</p></article><article class="card"><h3>Fast, accessible pages</h3><p class="muted">Lightweight code, readable contrast, keyboard-friendly.</p></article><article class="card"><h3>Consistent branding</h3><p class="muted">Colours and type that match your business.</p></article><article class="card"><h3>Transparent communication</h3><p class="muted">Plain-language updates and agreed scope.</p></article><article class="card"><h3>Practical delivery</h3><p class="muted">Handover notes and support after launch.</p></article></div></div></section>
+<section class="section" id="about"><div class="container narrow"><p class="eyebrow">About</p><h2>An independent web developer building for small businesses</h2><p class="lead">I am a student developer who designs and builds websites that help small businesses look credible online. I focus on clean design, clear communication and fair pricing. I am building my portfolio, so my current samples are concept projects.</p></div></section>
+<section class="section" id="faq"><div class="container narrow"><p class="eyebrow">FAQ</p><h2>Questions, answered</h2><details><summary>How much does a website cost?</summary><p class="muted">See the packages above. Final price depends on pages and features, and I confirm it in writing before starting.</p></details><details><summary>How long does it take?</summary><p class="muted">Small sites often take a couple of weeks once content is ready. I give an estimate after discussing your project.</p></details><details><summary>Will it work on mobile?</summary><p class="muted">Yes. Every site is designed mobile-first and tested on common screen sizes.</p></details><details><summary>How many revisions are included?</summary><p class="muted">Each package lists its rounds of revisions. Extra changes can be quoted separately.</p></details><details><summary>Do I need a domain and hosting?</summary><p class="muted">Yes, they are usually separate yearly costs. I can suggest affordable or free options and help set them up.</p></details><details><summary>Do you offer maintenance?</summary><p class="muted">Yes, as an optional extra after launch, agreed separately.</p></details><details><summary>How do I start?</summary><p class="muted">Fill in the enquiry form below or message me on WhatsApp.</p></details></div></section>
+<section class="section estimator-section" id="estimator"><div class="container"><div class="estimator-heading"><div><p class="eyebrow">Project scope builder</p><h2>Get a clearer <em>starting point.</em></h2></div><p class="lead">Choose the page count and project type. The planner selects one of the three starter packages; advanced features are quoted separately.</p></div><div class="estimator-shell"><div class="estimator-controls"><label>What are we building?<select id="estimate-type"><option value="landing">Landing page</option><option value="business" selected>Business website</option><option value="portfolio">Portfolio website</option><option value="restaurant">Restaurant / cafe</option><option value="shop">Online store</option></select></label><label>Approximate page count <span class="range-value" id="page-count-label">5 pages</span><input id="estimate-pages" type="range" min="1" max="5" value="3" step="1"></label><fieldset class="estimate-features"><legend>Extra features to discuss (not included)</legend><label><input type="checkbox" value="gallery"> Photo gallery / lookbook</label><label><input type="checkbox" value="booking"> Booking or appointment flow</label><label><input type="checkbox" value="payments"> Online payment integration</label><label><input type="checkbox" value="backend"> Custom backend / dashboard</label><label><input type="checkbox" value="seo"> Extra SEO / content setup</label></fieldset><p class="small muted">Starter prices cover simple static websites only. Domain, hosting, payment gateways, bookings and backend work are discussed separately on WhatsApp.</p></div><aside class="estimate-result"><span class="control-kicker">YOUR STARTER PACKAGE</span><p class="estimate-price" id="estimate-price" aria-live="polite">₹1,399</p><p class="muted" id="estimate-summary">Business website · 3 pages · Standard package</p><div class="estimate-divider"></div><ul class="estimate-breakdown" id="estimate-breakdown"><li><span>Selected package</span><strong>₹1,399</strong></li><li><span>Optional integrations</span><strong>Quoted separately</strong></li></ul><button class="btn btn-primary" type="button" id="use-estimate">Use this in my enquiry <span aria-hidden="true">↗</span></button><p class="small muted">No payment is collected on this website. Use the planner to send your selected package and project details to WhatsApp.</p></aside></div></div></section>
+<section class="section" id="contact"><div class="container narrow"><p class="eyebrow">Your next move starts here</p><h2>Let’s make something <em>matter.</em></h2>
+<p class="muted">Tell me a little about your business and what you want to build. Your details will be prepared as a WhatsApp message to 7569324738. WhatsApp opens with the full message; tap Send to deliver it. You can also use email.</p>
+<form id="enquiry" novalidate>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Business name<input name="business" autocomplete="organization"></label>
+<label>Email or phone<input name="contact" required autocomplete="email"></label>
+<label>Website type<select name="type" required><option value="">Choose one</option><option>Business website</option><option>Landing page</option><option>Portfolio website</option><option>Restaurant / cafe</option><option>Redesign</option><option>Maintenance</option></select></label>
+<label>Approximate budget<select name="budget"><option value="">Not sure yet</option><option>₹999 — Starter</option><option>₹1,399 — Standard</option><option>₹1,899 — Plus</option><option>Need to discuss extra features</option></select></label>
+<label class="full">Project description<textarea name="message" rows="4" required></textarea></label>
+<p id="form-status" class="full status" role="status" aria-live="polite"></p>
+<div class="full hero-actions"><button class="btn btn-primary" type="submit" data-channel="wa">Send via WhatsApp</button><button class="btn btn-ghost" type="submit" data-channel="mail">Send via email</button></div></form><aside class="brief-summary" id="brief-summary" aria-live="polite"><div><p class="eyebrow">Your project brief</p><h3>Clear scope. Better quote.</h3><p class="muted small">As you fill in the form, this summary updates. Nothing is sent until you choose a contact option and press send in your app.</p></div><div class="brief-summary-grid"><div><span>Website type</span><strong id="brief-type">Not selected</strong></div><div><span>Budget range</span><strong id="brief-budget">Not sure yet</strong></div><div><span>Business</span><strong id="brief-business">Not provided</strong></div></div><button class="btn btn-ghost" type="button" id="copy-brief">Copy project brief</button><p class="small muted" id="copy-status" role="status"></p></aside></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-orbit" aria-hidden="true"></div><div class="container footer-grid"><div><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">N</span><span class="logo-word">NOVARYX<span class="logo-suffix">™</span></span></a><p class="muted small">Digital experiences for ambitious small businesses.<br>Concept projects are clearly labelled.</p></div>
+<nav aria-label="Footer"><a href="#work">Work</a><a href="#playground">Design lab</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#estimator">Project planner</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="demos/index.html?theme=hospitality" target="_blank" rel="noopener">Live concept demos ↗</a></nav>
+<div><a data-whatsapp href="#contact">WhatsApp</a><a data-mail href="#contact">Email</a><a href="#" data-social aria-disabled="true">Instagram (add link)</a></div></div>
+<div class="container footer-bottom"><p class="muted small">&copy; <span id="year">2026</span> NOVARYX Studio. Built with intention.</p><a class="back-top" href="#top">Back to top ↑</a></div></footer>
+  <dialog id="preview" aria-label="Concept preview"><button class="btn btn-ghost close" id="pv-close">Close</button><div id="pv-body"></div></dialog>
+</body>
+</html>
